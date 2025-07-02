@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "analize": "npm run lint:fix && npm run compile",
+    "palindrome": "ts-node src/core/palindrome.ts",
+    "romanConversor":"ts-node src/core/romanConversor.ts",
+    "celsiustofahrenheit": "ts-node src/core/celsiustofahrenheit.ts",
+    "analize": "npm run analiyze",
     "compile": "tsc --noEmit",
     "compile:watch": "npm run compile -- --watch",
     "compile:build": "tsc -b",
@@ -22,6 +25,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.7",
     "@typescript-eslint/eslint-plugin": "^7.7.0",
     "@typescript-eslint/parser": "^7.7.0",
     "eslint": "^8.57.0",
@@ -34,8 +38,8 @@
     "npm-check-updates": "^16.14.18",
     "prettier": "^3.2.5",
     "ts-jest": "^29.1.2",
-    "typescript": "^5.4.5",
-    "@types/node": "^20.12.7"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
   },
   "husky": {
     "hooks": {
